@@ -1,19 +1,45 @@
-# React + Vite
+# 🏀 NBA Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Aplicação desenvolvida para demonstrar a criação de componentes reutilizáveis (`Card` e `Header`), estilização modular e renderização dinâmica no React.
 
-Currently, two official plugins are available:
+[![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat&logo=vite)](https://vitejs.dev/)
+[![CSS Modules](https://img.shields.io/badge/CSS-Modules-000000?style=flat&logo=css3)](https://github.com/css-modules/css-modules)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Sobre o Projeto
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+O **NBA Gallery** é um projeto prático e didático voltado para o aprendizado dos conceitos fundamentais de desenvolvimento **Front-end com React**. 
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+Nesta aplicação, os alunos aprendem a:
+- Estruturar componentes funcionais reutilizáveis (`<Header />` e `<Card />`).
+- Manipular dados dinâmicos com estado (`useState`) e renderizar listas usando `.map()`.
+- Passar dados entre componentes pai e filho via **props**.
+- Evitar colisões de estilo global utilizando **CSS Modules** e **CSS Grid/Flexbox**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologias Utilizadas
+
+- **[React](https://react.dev/)** — Biblioteca para construção de interfaces de usuário.
+- **[Vite](https://vitejs.dev/)** — Build tool rápida e leve para projetos web.
+- **[CSS Modules](https://github.com/css-modules/css-modules)** — Estilização com escopo local encapsulado por componente.
+
+---
+
+## 📁 Estrutura de Arquivos
+
+```text
+src/
+├── assets/                # Imagens e recursos estáticos
+├── components/
+│   ├── Card/
+│   │   ├── Card.jsx       # Componente de exibição do card do jogador
+│   │   └── Card.module.css# Estilos isolados do Card
+│   └── Header/
+│       ├── Header.jsx     # Componente do cabeçalho da aplicação
+│       └── Header.module.css # Estilos isolados do Header
+├── App.jsx                # Componente principal que unifica a aplicação
+├── App.module.css         # Grid e layout principal
+└── main.jsx               # Ponto de entrada do React
