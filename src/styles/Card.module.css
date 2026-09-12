@@ -1,0 +1,65 @@
+.card {
+  background-color: #1e293b;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #334155;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  border-color: #38bdf8;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #0f172a;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Importante para não distorcer */
+  transition: transform 0.3s ease;
+}
+
+.card:hover .foto {
+  transform: scale(1.05); /* Zoom suave na imagem */
+}
+
+.info {
+  padding: 1.5rem;
+  text-align: center;
+  flex-grow: 1; /* Garante que o conteúdo ocupe o espaço */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nome {
+  color: #f1f5f9;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.button {
+  background-color: transparent;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
