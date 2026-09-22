@@ -1,4 +1,4 @@
-# NBA Gallery
+# NBA Galeria
 
 Galeria dinâmica em React para exibição de cards de jogadores da NBA, focada no ensino de componentes reutilizáveis e CSS Modules.
 
