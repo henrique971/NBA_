@@ -4,7 +4,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <h1>NBA STARS</h1>
+        <h1 className={styles.logo}>🏀 NBA STARS</h1>
       </div>
     </header>
   );
