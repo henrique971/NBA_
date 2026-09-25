@@ -6,6 +6,7 @@
 
 .gridJogadores {
   display: grid;
+  /* Layout responsivo: mínimo de 280px por coluna */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 3rem 2rem;

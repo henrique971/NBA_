@@ -4,7 +4,7 @@ export function Card({ jogador }) {
   if (!jogador) return null;
 
   return (
-    <div className={styles.card}>
+    <div className={styles.card} aria-label={`Card de ${jogador.nome}`}>
       <div className={styles.imageContainer}>
         <img 
           src={jogador.foto} 

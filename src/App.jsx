@@ -11,6 +11,7 @@ import lukaImg from "./assets/luka.png"
 import tatumImg from "./assets/tatum.png"
 
 
+// Lista de jogadores exibidos na galeria
 const JOGADORES_INICIAIS = [
   { id: 1, nome: "LeBron James", foto: lebronImg },
   { id: 2, nome: "Stephen Curry", foto: curryImg },
